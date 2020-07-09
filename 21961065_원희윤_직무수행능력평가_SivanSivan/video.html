@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Troye Sivan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/videostyle.css">
+    <link rel="stylesheet" href="css/cursor.css">
+</head>
+
+<body class="list">
+    <div class="main-btn">
+        <a href="./index.html" target="_self" class="main-txt">M<a>
+    </div>
+    <nav>
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+    
+        <div class="nav-links">
+            <a href="./index.html" class="link">Main</a>
+            <a href="./photo.html" class="link">Photo</a>
+            <a href="./video.html" class="link">Music Video</a>
+            <a href="./contact.html" class="link">Contact</a>
+            <a href="https://twitter.com/troyesivan" class="sns">twitter</a>
+            <a href="https://www.instagram.com/troyesivan/" class="sns">instagram</a>
+            <a href="https://www.youtube.com/user/TroyeSivan18" class="sns">youtube</a>
+        </div>
+    </nav>
+
+    <div class="preview-slider">
+        <div class="slider-wrapper">
+
+            <div class="slider-item" style="background-image: url('img/gallery9.jpg')">
+            <div class="slider-desc">
+                <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                <source src="./video/takeyourselfhome.mp4">
+                </video>
+                <p class="title">Take Yourself Home</p>
+                <span class="desc">
+                on April 2020.
+                </span><br/>
+
+                <div class="box">
+                <a class="button" href="#popup1">Click Here!</a>
+                </div>
+            
+                <div id="popup1" class="overlay">
+                <div class="popup">
+                    <!-- <h2>check popup</h2> -->
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <video src="./video/takeyourselfhome.mp4" autoplay controls id="vidoe2" width="1080"></video>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="slider-item" style="background-image: url('img/background.jpg')">
+                <div class="slider-desc">
+                    <p class="title">Troye's New Song</p><hr>
+            
+                    <span class="desc">
+                    Released a song in about a year.<br>
+                    Please give him lots of love and attention!<br>
+                    </span>
+                </div>
+            </div>
+
+            <div class="slider-item" style="background-image: url('img/gallery6.jpg')">
+                <div class="slider-desc">
+                    <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0"">
+                    <source src="./video/youth.mp4">
+                    </video>
+                    <p class="title">Watch More Videos!</p>
+                    <span class="desc">
+                    Go to Youtube and watch more music videos.
+                    </span><br/>
+    
+                    <div class="box">
+                    <a class="button" href="https://www.youtube.com/channel/UCWcrr8Q9INGNp-PTCLTzc8Q">Click Here!</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="arrow arrow-right"></div>
+        <div class="arrow arrow-left"></div>
+
+    </div>
+
+    <div id="cursor-dot">&nbsp;</div>
+    <div id="cursor-bg">&nbsp;</div>
+    <div id="progress"><span>&nbsp;</span></div>
+
+    <script type="text/javascript" src="./vendor/gsap.min.js"></script>
+    <script type="text/javascript" src="./js/cursor.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+
+</body>
+</html>

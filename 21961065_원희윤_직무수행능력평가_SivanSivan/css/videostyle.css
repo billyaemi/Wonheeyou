@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {margin:0;padding:0;}
+a {text-decoration: none; color: white;}
+li {list-style-type: none;}
+/*a:hover {cursor: none;}*/
+
+html,
+body {
+  width: 100%;
+  height: 100%; 
+  background-color: #1E1F23;
+}
+
+body {
+  font-family: 'Montserrat'
+}
+
+/*video*/
+.slider-desc {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.slider-desc .title {
+  text-align: left;
+  font-size: 55px;
+  font-weight: 800;
+  margin-top: 24%; 
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+.slider-desc .desc {
+  float: left;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 150px;
+  font-weight: 100;
+  line-height: 1.4; 
+}
+
+.zoom .slider-item {
+	cursor: none;
+}
+
+#video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/*pop-up*/
+/*버튼을 클릭하게 되면 팝업창이 뜨는 것을 설정함*/
+.box {
+  width: 10%;
+  margin: 0 auto;
+  padding: 45px;
+  background-clip: padding-box;
+  text-align: center;
+  float: left;
+  position: absolute;
+  margin-left: 80px;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #E00420;
+  border: 2px solid #E00420;
+  border-radius: 50px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #E00420;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 110px auto;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background:rgba(255,255,255,0.3);
+  border-radius: 5px;
+  width: 1200px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #E00420;
+}
+.popup .content {
+  max-height: 50%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
