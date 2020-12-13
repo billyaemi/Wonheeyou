@@ -6,11 +6,7 @@ li {list-style-type: none;}
 a:hover {cursor: none;}
 
 /*background*/
-html {
-    /*cursor: none;*/
-    max-width: 1920px;
-    max-height: 1080px;
-}
+
 body {
     background-image: url('../img/background.jpg');
     background-size: cover;
